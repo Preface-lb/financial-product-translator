@@ -1,1 +1,1 @@
-# financial-product-transtator
+# financial-product-translator
