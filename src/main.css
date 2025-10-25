@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
+
+.common-layout {
+  margin: 0;
+  width: 100%;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+}
+
+.el-header, .el-footer {
+  flex-shrink: 0;
+}
+
+.el-header {
+  padding: 0 !important;
+  height: 90px;
+  overflow: hidden;
+}
+
+.el-main {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 0 !important;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  display: none !important;
+}
+* {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
