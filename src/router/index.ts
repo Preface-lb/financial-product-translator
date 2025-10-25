@@ -1,10 +1,11 @@
 // src/router/index.ts
 
 import { createRouter, createWebHistory, type Router, type RouteRecordRaw } from 'vue-router'
-import { homeRoute} from './routes'
+import { homeRoute ,loginRoute} from './routes'
 
 export enum RoutePath {
   Home = '/home',
+  Login = '/login',
   Forbidden = '/403'
 }
 
@@ -14,6 +15,7 @@ export const routes: RouteRecordRaw[] = [
     redirect: '/home'
   } as RouteRecordRaw,
   homeRoute as RouteRecordRaw,
+  loginRoute as RouteRecordRaw,
 
   {
     path: '/403',
@@ -23,7 +25,7 @@ export const routes: RouteRecordRaw[] = [
       permissionKey: null,
     },
   } as RouteRecordRaw,
-  // 新增404路由，匹配所有未定义的路径
+
   {
     path: '/:pathMatch(.*)*',
     redirect: '/403' // 或者指向专门的404页面

@@ -9,5 +9,11 @@ export const homeRoute: RouteRecordRaw = {
   component: () => import('../views/homepage/home-page.vue'),
 }
 
+export const loginRoute: RouteRecordRaw = {
+  path: '/login',
+  name: 'Login',
+  component: () => import('../views/loginpage/login-page.vue'),
+}
+
 
 
